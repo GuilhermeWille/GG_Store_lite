@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #5700EB;
+}
+
+#topHeader {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#bottomHeader {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e9ecef;
+}
+
+#logo h1 {
+    font-size: 1.8em;
+    color: #5700EB;
+}
+
+#searchBar {
+    flex-grow: 1;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#searchBar input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    background-color: #f1f3f5;
+    color: #495057;
+}
+
+#searchBar button {
+    background-color: #5700EB;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#NavIcons a {
+    color: #5700EB;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 5px;
+}
+
+#NavMenu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#NavMenu ul li a {
+    color: #5700EB;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+#NavMenu ul li a:hover {
+    color: #ffc107;
+}
+
+main {
+    padding: 20px;
+}
+
+#productSection {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+}
+
+#productSection::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    min-width: 250px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 10px 0 8px;
+    color: #5700EB;
+}
+
+.card p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #212529;
+}
+
+.card button {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #e6b000;
+}
+
+.carousel-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.carousel-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #000000;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.carousel-nav:hover {
+    transform: translateY(-50%) scale(1);
+}
+
+.prev-arrow {
+    left: -10px;
+}
+
+.next-arrow {
+    right: -10px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #5700EB;
+    margin-top: 20px;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 24vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#banner span {
+    position: relative;
+    z-index: 2;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    #topHeader, #bottomHeader {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    #searchBar {
+        order: 2;
+        width: 100%;
+    }
+    #NavIcons {
+        order: 3;
+    }
+    #NavMenu {
+        order: 4;
+    }
+    #NavMenu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

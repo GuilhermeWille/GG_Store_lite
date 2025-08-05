@@ -16,7 +16,7 @@ public class ProductService{
             "caneca001",
             "Caneca Gamer",
             "Canecas",
-            "PlaecholderImage",
+            "assets/images/canecaGamer.png",
             "Caneca de Doom exclusivo para gamers",
             4999
         ));
@@ -24,7 +24,7 @@ public class ProductService{
             "camisa001",
             "Camisa Valorant Champions",
             "Camisas",
-            "PlaceholderImgae",
+            "assets/images/camisaValorantChampions.png",
             "camisa da chapion de valorant",
             7999
         ));
@@ -32,7 +32,7 @@ public class ProductService{
             "figure001",
             "Hollow Knight figure",
             "Figures",
-            "PlaceholderImage",
+            "assets/images/figureHollowKinigt.png",
             "Uma Figure de hollow knight",
             19999
         ));
@@ -40,7 +40,7 @@ public class ProductService{
             "quadro001",
             "Quadro Minecraft Creeper",
             "Quadros",
-            "PlaceholderImage",
+            "assets/images/quadroCreeper.jpeg",
             "Um quadro do Creeper do minecraft",
             5999
         ));
@@ -48,7 +48,7 @@ public class ProductService{
             "mochila001",
             "Mochila Grande Multifuncional",
             "Mochilas",
-            "PlaceholderImage",
+            "assets/images/mochilaGrandeMultifuncional.png",
             "Uma mochila multifuncional, que vira mala, bolsa de viagem",
             13599
         ));
@@ -56,7 +56,7 @@ public class ProductService{
             "bone001",
             "Bone Nat 20",
             "Bones",
-            "PlaceholderImage",
+            "assets/images/bone.png",
             "Um Bone para fans de RPG de mesa, com um D20",
             2999
         ));

@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GG Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <div id="topHeader">
+            <div id="logo">
+                <h1>GG Store</h1>
+            </div>
+            <div id="searchBar">
+                <input type="text" placeholder="Buscar produtos..."/>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div id="NavIcons">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <div id="NavMenu">
+                <ul>
+                    <li><a href="#">Canecas</a></li>
+                    <li><a href="#">Camisas</a></li>
+                    <li><a href="#">Figures</a></li>
+                    <li><a href="#">Quadros</a></li>
+                    <li><a href="#">Mochilas</a></li>
+                    <li><a href="#">Bones</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="banner">
+            <img src="assets/images/GG Store.png" alt="Banner de destaque da GG Store" style="width: 100%; border-radius: 10px;">
+            <span>GG Store</span>
+        </div>
+
+        <h2 style="margin-top: 40px; text-align: center; color: #5700EB;">Produtos em Destaque</h2>
+        <div class="carousel-wrapper">
+            <div id="productCarousel" class="carousel-container">
+                <button class="carousel-nav prev-arrow">&lt;&lt;&lt;</button>
+                <div id="productSection" class="product-container">
+                </div>
+                <button class="carousel-nav next-arrow">&gt;&gt;&gt;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contactInfo">
+            <p>Email: contato@ggstore.com</p>
+            <p>Telefone: (99) 99999-9999</p>
+        </div>
+        <div id="links">
+        </div>
+        <div id="scoialMidia">
+        </div>
+        <div id="copyright">
+            <p>&copy; 2025 GG Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
